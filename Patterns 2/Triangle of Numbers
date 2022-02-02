@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+       /*  Read input as specified in the question.
+	* Print output as specified in the question.
+	*/
+  int n;
+    cin >> n;
+    int i = 1 ;
+    while(i<=n){
+        int j = 1;
+        int space = 1 ;
+        while(space<=n-i){
+            cout << " ";
+            space++;
+        }
+        int start = i + 1 - 1;
+        while(j<=i){
+            cout<< start;
+            j++;
+            start++;
+        }
+        int k = i - 1;
+        int end = start - 2 ;
+        while(k>=1){
+            cout<< end;
+            k--;
+            end--;
+        }
+        i++;
+        cout<<endl;
+    }
+}
+
+
